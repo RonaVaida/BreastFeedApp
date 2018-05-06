@@ -1,0 +1,312 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8sp"
+                android:text="Welcome to the Breastfeeding QUIZ app"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Type your name here"
+                android:inputType="text"
+                android:text=""
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This app is a short quiz about breastfeeding, the best nutrition a baby could get. Lets see how much you know about it. GOOD LUCK!"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/breastfeeding" />
+
+            <RadioGroup
+                android:id="@+id/Question1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/QuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="16dp"
+                    android:text="1. What is the name of the first milk?" />
+
+                <RadioButton
+                    android:id="@+id/Q1A1"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion1"
+                    android:text="Milk" />
+
+                <RadioButton
+                    android:id="@+id/Q1A2"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion1"
+                    android:text="Polastium" />
+
+                <RadioButton
+                    android:id="@+id/Q1A3"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion1"
+                    android:text="Colostrum" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Question2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/QuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="16dp"
+                    android:text="2. What's the best nutrition to your baby?" />
+
+                <RadioButton
+                    android:id="@+id/Q2A1"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion2"
+                    android:text="Cow milk" />
+
+                <RadioButton
+                    android:id="@+id/Q2A2"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion2"
+                    android:text="Formula" />
+
+                <RadioButton
+                    android:id="@+id/Q2A3"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion2"
+                    android:text="Other mom's milk" />
+
+                <RadioButton
+                    android:id="@+id/Q2A4"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion2"
+                    android:text="Your milk" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Question3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/QuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="16dp"
+                    android:text="3. On average, how many milk openings does a nipple have?" />
+
+                <RadioButton
+                    android:id="@+id/Q3A1"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion3"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/Q3A2"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion3"
+                    android:text="Hundreds of minuscule openings" />
+
+                <RadioButton
+                    android:id="@+id/Q3A3"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion3"
+                    android:text="100" />
+
+                <RadioButton
+                    android:id="@+id/Q3A4"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion3"
+                    android:text="5-10" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Question4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/QuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="16dp"
+                    android:text="4. A breastfeeding mama needs to space feedings so her breasts have time to refill" />
+
+                <RadioButton
+                    android:id="@+id/Q4A1"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion4"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/Q4A2"
+                    style="AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonQuestion4"
+                    android:text="False" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8sp"
+                android:padding="16dp"
+                android:text="5. BONUS - Mark the benefits of breastfeeding:" />
+
+            <CheckBox
+                android:id="@+id/Q5A1"
+                style="AnswersStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breastfeeding prevents from getting pregnant" />
+
+            <CheckBox
+                android:id="@+id/Q5A2"
+                style="AnswersStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breastfed babies usually have a stronger immune system " />
+
+            <CheckBox
+                android:id="@+id/Q5A3"
+                style="AnswersStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breastfeeding burns up to 500 calories per day" />
+
+            <CheckBox
+                android:id="@+id/Q5A4"
+                style="AnswersStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Moms who breastfeed are lowering risk for breast cancer " />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:onClick="submitAnswers"
+                android:padding="26dp"
+                android:textSize="16sp"
+                android:text="Submit your answers"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/your_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Your Score: "
+                android:textSize="16sp" />
+
+            <!-- Reset Button to restart the app -->
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:background="@color/colorAccent"
+                android:onClick="resetButton"
+                android:textSize="16sp"
+                android:text=" Reset QUIZ answers " />
+
+            <TextView
+                android:id="@+id/laleche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="8sp"
+                android:linksClickable="true"
+                android:onClick="clickLink"
+                android:padding="26dp"
+                android:text="Click here to read more about breastfeeding"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
